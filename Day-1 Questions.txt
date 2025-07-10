@@ -1,0 +1,5 @@
+1. write a java program to perform arithmetic calculator,
+2. write a java program to print even numbers 1-100,
+3. write a java program to find whether given nub prime or not
+4. write a java program to reverse a string using string builder
+5. write a java program to perform bank transaction - creation of account, transaction.
