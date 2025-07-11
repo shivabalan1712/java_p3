@@ -43,6 +43,7 @@ public class BankingTrans {
             if (amount > 0 && balance >= amount) {
                 balance -= amount;
                 String msg = "Transfer of Rs. " + amount + " Success " + " Reason :" + reason ;
+                System.out.println("inside first meth");
                 transactions.add(msg);
                 System.out.println(msg);
             } else if (amount <= 0)
@@ -55,6 +56,7 @@ public class BankingTrans {
             if (amount > 0 && balance >= amount) {
                 balance -= amount;
                 String msg = "Transfer of Rs. " + amount + " Success " + " Reason :" + reason ;
+                System.out.println("inside second meth");
                 transactions.add(msg);
                 System.out.println(msg);
             } else if (amount <= 0)
@@ -67,6 +69,7 @@ public class BankingTrans {
             if (amount > 0) {
                 balance += amount;
                 String msg = "Updated Balance of Receiver: Rs. " + balance;
+                
                 transactions.add(msg);
                 System.out.println(msg);
             } else {
@@ -190,8 +193,10 @@ public class BankingTrans {
                         if (receiverAcc != null) {
                             System.out.print("Enter transaction details: ");
                             double amt = sc.nextDouble();
-                            sc.nextLine();
-                            String note = sc.nextLine();                         
+                             //sc.nextLine();
+                            String note = sc.nextLine();  
+                            System.out.println("in case5");
+                            senderAcc.transfer(note,amt);
                             senderAcc.transfer(amt,note);
                             receiverAcc.addmoney(amt);
                         } else {
