@@ -55,6 +55,6 @@ java FileName
 
 **Shiva Balan K**  
 MCA Student, College of Engineering, Guindy  
-Email: [your.email@example.com]  
+Email: [shivabalan2002@gmail.com]  
 GitHub: [shivabalan1712](https://github.com/shivabalan1712)
 
