@@ -39,3 +39,22 @@ Each `.java` file can be compiled and run individually:
 ```bash
 javac FileName.java
 java FileName
+```
+
+## 📌 Key Learnings
+
+- Understanding class and object structures
+- Implementing inheritance and method overriding
+- Using collections like `ArrayList` and `LinkedList`
+- Enhancing code with constructors and access modifiers
+- Building interactive CLI applications
+
+---
+
+## 🧾 Author
+
+**Shiva Balan K**  
+MCA Student, College of Engineering, Guindy  
+Email: [your.email@example.com]  
+GitHub: [shivabalan1712](https://github.com/shivabalan1712)
+
