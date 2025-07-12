@@ -15,7 +15,7 @@ class Employee {
 }
 
 class Manager extends Employee {
-    private double splallow;
+    private double splallow;rrrrrrrrrrrrr
 
     public Manager(String empid, String name, double salary, double splallow) {
         super(empid, name, salary);
