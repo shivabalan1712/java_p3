@@ -1,0 +1,2 @@
+1.Write a Java program to validate voter eligibility using custom exception.
+2.write a java program to perform pos using exception
