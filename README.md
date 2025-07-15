@@ -1,53 +1,83 @@
 # Java Practice Programs – P3 Coursework
 
-This repository contains a collection of basic Java programs created as part of Company coursework. These exercises primarily focus on Object-Oriented Programming (OOP) principles, such as inheritance, polymorphism, encapsulation, and abstraction.
+This repository contains a collection of basic Java programs created as part of company coursework. These exercises focus on core Java and Object-Oriented Programming (OOP) principles, such as inheritance, encapsulation, abstraction, and algorithm implementation—not DSA (data structures & algorithms).
 
-## 📘 Overview
+## 📘 Programs Included
 
-The following programs demonstrate core Java concepts in real-world scenarios:
-
-### ✅ Programs Implemented
+### ✅ OOP & Basic Utilities
 
 - **Employee Management System**  
-  Showcases inheritance with base and derived classes (`Employee`, `Manager`), and method overriding.
+  Showcases inheritance (e.g., `Employee`, `Manager`) and method overriding.
 
 - **Banking System**  
-  Simulates simple banking operations like deposit, withdrawal, and transaction history using classes and collections.
+  Simulates banking operations (deposit, withdrawal, transaction history) using Java collections.
 
 - **Library Management System**  
-  Implements book catalog management, including adding, searching, and displaying books.
+  Manages book catalog—adding, searching, listing.
 
 - **Student Record Management**  
-  Uses encapsulation to manage student details and grades.
+  Uses encapsulation to store and manage student details and grades.
 
-- **Static and Final Keyword Examples**  
-  Demonstrates the usage of static variables and methods.
+- **Static & Final Examples**  
+  Demonstrates `static` variables/methods and `final` modifiers.
 
 - **Constructor Overloading**  
-  Shows multiple constructors with different parameter lists.
+  Shows multiple constructors for the same class with varied parameters.
+
+### 🔢 Algorithm & Utility Snippets
+
+- **CountGoodDigitString.java** & **GoodDigitStringBruteForce.java**  
+  Count digit strings where even indices are even and odd indices are prime (2, 3, 5, 7) :contentReference[oaicite:1]{index=1}.
+
+- **reverseString.java**  
+  Reverse a string using `StringBuilder` in O(n) time :contentReference[oaicite:2]{index=2}.
+
+- **mergeSortedArray.java**  
+  Merge two sorted arrays efficiently in O(n + m) time :contentReference[oaicite:3]{index=3}.
+
+- **balancedBST.java**  
+  Build a height-balanced BST from a sorted array using divide-and-conquer :contentReference[oaicite:4]{index=4}.
+
+- **matrixMultiplication.java**  
+  Classic O(n³) matrix multiplication :contentReference[oaicite:5]{index=5}.
+
+- **subsets.java**  
+  Generate the power set (all subsets) of an array using recursion :contentReference[oaicite:6]{index=6}.
+
+- **quickSort.java**  
+  QuickSort implementation with partition recursion :contentReference[oaicite:7]{index=7}.
+
+- **linearSearch.java**  
+  Linear search with O(n) time complexity :contentReference[oaicite:8]{index=8}.
+
+- **nestedLoops.java**  
+  Example of nested loops—foundation for understanding nested time complexities :contentReference[oaicite:9]{index=9}.
 
 ## 🛠️ Tools & Requirements
 
-- Java Development Kit (JDK 8 or higher)
-- IDE (IntelliJ IDEA, Eclipse, or VS Code)
-- Command-line terminal for compiling and running
+- Java Development Kit (JDK 8 or higher)  
+- IDE: IntelliJ IDEA, Eclipse, or VS Code  
+- Terminal/command line for compile & run
 
 ## 🔄 How to Run
 
-Each `.java` file can be compiled and run individually:
-
+Compiling and running each `.java` file individually:
 ```bash
 javac FileName.java
 java FileName
 ```
-
+##Example
+```bash
+javac CountGoodDigitString.java
+java CountGoodDigitString
+```
 ## 📌 Key Learnings
 
-- Understanding class and object structures
-- Implementing inheritance and method overriding
-- Using collections like `ArrayList` and `LinkedList`
-- Enhancing code with constructors and access modifiers
-- Building interactive CLI applications
+- Mastered class and object design
+- Applied inheritance, encapsulation, and method overriding
+- Practiced with `ArrayList`, recursion, and loops
+- Explored algorithmic logic at a basic level (e.g., QuickSort, subsets, matrix ops)
+- Used constructors, `static`, and `final` keywords effectively
 
 ---
 
@@ -57,4 +87,3 @@ java FileName
 MCA Student, College of Engineering, Guindy  
 Email: [shivabalan2002@gmail.com]  
 GitHub: [shivabalan1712](https://github.com/shivabalan1712)
-
