@@ -66,7 +66,7 @@ Compiling and running each `.java` file individually:
 javac FileName.java
 java FileName
 ```
-##Example
+Example
 ```bash
 javac CountGoodDigitString.java
 java CountGoodDigitString
