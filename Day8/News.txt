@@ -1,0 +1,37 @@
+Air India-Boeing plane crash investigation: Days after the Aircraft Accident Investigation Bureau (AAIB) report was released, a media outlet claimed that investigators are studying possible snags in the electrical and software components of the aircraft, which could possibly have triggered “uncommanded” actions.
+
+“The probe will ascertain the possibility of an ‘un-commanded transition’ of the fuel control switches to the cut-off mode seconds after the lift-off,” sources told The Indian Express.
+
+'Fuel cut off': What AAIB report on Air India crash revealed?
+The AAIB report released on July 12 claimed that the London-bound Air India flight had experienced a "fuel cut off" seconds after taking off from Ahmedabad's Sardar Vallabhbhai Patel International Airport (VAAH) on June 12.
+
+According to the cockpit voice recording, the pilot denied cutting off the fuel. One pilot was heard asking, "Why did you cut off?" to which the other replied, "I did not do so."
+Two switches in the flight deck control the fuel supply to the engine. Switching to "cut-off" is typically done only after landing.
+
+They are used by pilots to start or shut down engines on the ground or to manually shut down or restart engines if an engine failure occurs during a flight. Aviation experts say a pilot would not be able to accidentally move the fuel switches that feed the engines.
+
+To turn the fuel supply on, the switch must be pulled outward and then moved to a “RUN” position, where it is released and settles back into a locked position. To turn the fuel supply off, the switch must be pulled outward again, moved to the “CUTOFF” position and then released again.
+
+The London-bound Boeing 787 Dreamliner crashed into a medical college hostel in Ahmedabad moments after taking off from the city airport, killing all but one of the 242 onboard and another 19 on ground in the deadliest aviation accident in a decade.
+
+'Stabilizer Position Transducer Defect’
+According to the Indian Express, just hours before take-off from Ahmedabad to London Gatwick on June 12, a pilot flying the same aircraft from Delhi to Ahmedabad noted in the technical log a ‘Stabilizer Position Transducer Defect’.
+
+The Stabilizer Position Transducer is essentially a sensor that controls aircraft pitch — the up and down movement of the nose — and transmits the data in electrical signals to the flight control system to ensure that responses to pilot input are accurate.
+
+The official told the Indian Express that the malfunction was checked and the engineer did the trouble shooting as per Boeing procedure.
+
+“The malfunction is a critical issue as it can trigger incorrect responses in flight control, including unintended fuel cut-off signal,” the official said.
+
+But he added, “The Stabilizer Position Transducer malfunction did not cause this crash, but the question is whether it led to multiple sensor failure.”
+
+‘Un-commanded transition’
+The official alleged that the aircraft had previously experienced two major snags, including a flight cancellation due to an “unresolvable electric snag” in December 2024 and an emergency landing in 2015 due to Cabin Air Compressor (CAC) surge, a known malfunction on Boeing 787-8 Dreamliner.
+
+The official said the flight data analysis would focus on the “trail of errors” as noted in technical logs to ascertain the health of the electric and software components of the aircraft.
+
+The official reportedly said that the Engine Indication and Crew Alerting System (EICAS) of the aircraft in some flights preceding the June 12 Ahmedabad-Gatwick flight had displayed some system warnings.
+
+“The probe is on to ascertain if the switch locks were disengaged due to an anomaly or if the FADEC’s (Full Authority Digital Engine Control) Engine Control Unit (the brain of the aircraft) malfunctioned as the microprocessor could have misinterpreted the commands and initiated uncontrolled actions,” he was quoted as saying.
+
+The investigators are likely to, therefore, delve into the ‘history of technical fault’ or malfunction in the course of the aircraft’s life, the official said.

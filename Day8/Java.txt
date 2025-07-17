@@ -1,0 +1,129 @@
+Java Program to Search for a File in a Directory
+Last Updated : 21 Oct, 2020
+Searching files in Java can be performed using the File class and FilenameFilter interface. The FilenameFilter interface is used to filter files from the list of files. This interface has a method boolean accept(File dir, String name) that is implemented to find the desired files from the list returned by the java.io.File.list() method. This method is very useful when we want to find files with a specific extension within a folder.
+
+First Approach
+
+Create a class MyFilenameFilter which implements the FilenameFilter interface and overrides the accept() method of FilenameFilter interface.
+The accept() method takes two arguments of which the first one is the directory name and the second one is the filename.
+The accept() method returns true if the filename starts with the specified initials else returns false.
+The class FindFile contains the main method which accepts the user input like the desired directory to search and the initials of the file to search.
+The directory object of File class is initiated with the director name and the filter object of MyFilenameFilter class is initiated with the initials provided by the user.
+The list() method is invoked on the dir object  which returns an array of files that satisfy the condition.
+The array is iterated over and the name of the required files are printed to the output screen.
+
+Code Implementation
+
+
+// Java Program to Search for a File in a Directory
+import java.io.*;
+
+// MyFilenameFilter class implements FilenameFilter
+// interface
+class MyFilenameFilter implements FilenameFilter {
+  
+    String initials;
+  
+    // constructor to initialize object
+    public MyFilenameFilter(String initials)
+    {
+        this.initials = initials;
+    }
+  
+    // overriding the accept method of FilenameFilter
+    // interface
+    public boolean accept(File dir, String name)
+    {
+        return name.startsWith(initials);
+    }
+}
+
+public class Main {
+  
+    public static void main(String[] args)
+    {
+        // Create an object of the File class
+        // Replace the file path with path of the directory
+        File directory = new File("/home/user/");
+
+        // Create an object of Class MyFilenameFilter
+        // Constructor with name of file which is being
+        // searched
+        MyFilenameFilter filter
+            = new MyFilenameFilter("file.cpp");
+
+        // store all names with same name 
+        // with/without extension
+        String[] flist = directory.list(filter);
+
+        // Empty array
+        if (flist == null) {
+            System.out.println(
+                "Empty directory or directory does not exists.");
+        }
+        else {
+
+            // Print all files with same name in directory
+            // as provided in object of MyFilenameFilter
+            // class
+            for (int i = 0; i < flist.length; i++) {
+                System.out.println(flist[i]+" found");
+            }
+        }
+    }
+}
+ 
+
+Output
+
+file.cpp found
+Second Approach
+
+The list() method is called on the dir object of the File class and the list of files in the 'flist' array.
+Each file in the 'flist' array is checked against the required filename.
+If a match is found it is printed on the screen.
+This method is a bit different from the previous one as the user needs to specify the exact name of the file in this case. 
+
+Code Implementation
+
+
+// Java Program to Search for a File in a Directory
+import java.io.File;
+
+public class Main {
+  
+    public static void main(String[] argv) throws Exception
+    {
+        // Create an object of the File class
+        // Replace the file path with path of the directory
+        File directory = new File("/home/user/");
+
+        // store all names with same name
+        // with/without extension
+        String[] flist = directory.list();
+        int flag = 0;
+        if (flist == null) {
+            System.out.println("Empty directory.");
+        }
+        else {
+
+            // Linear search in the array
+            for (int i = 0; i < flist.length; i++) {
+                String filename = flist[i];
+                if (filename.equalsIgnoreCase("file.cpp")) {
+                    System.out.println(filename + " found");
+                    flag = 1;
+                }
+            }
+        }
+
+        if (flag == 0) {
+            System.out.println("File Not Found");
+        }
+    }
+}
+ 
+
+Output
+
+file.cpp found
