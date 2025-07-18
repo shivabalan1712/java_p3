@@ -1,0 +1,17 @@
+student details -> name,score,rank,choice[],allotment
+clg details -> name,totseats,avbseats;
+
+councelingmap -> student->arraylist of student details
+		 clg - hashmap <name, college details> //to fetch the clg
+		 
+		 perform counceling 
+		  - for student in students
+		  	- for clg in choice
+		  		-if clg present and seat available
+		  			-available --
+		  			-student.allot
+		-display student details
+		-clg vacancy
+	
+main cls -> addclg
+	    perform switch ops
