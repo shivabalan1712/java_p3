@@ -7,7 +7,7 @@ class LoadTask extends Thread {
 
     public void run() {
         while (running) {
-            // Simulate CPU work
+
             double dummy = Math.sin(Math.random());
         }
         System.out.println(Thread.currentThread().getName() + " stopped.");
@@ -27,7 +27,7 @@ public class RunForOneMinute {
         }
 
         System.out.println("🕒 Threads running for 1 minute...");
-        Thread.sleep(60000); // Wait 1 minute (60000 ms)
+        Thread.sleep(10000); // Wait 1 minute (60000 ms)
 
         // Stop all threads
         for (LoadTask thread : threads) {
