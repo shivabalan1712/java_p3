@@ -1,0 +1,9 @@
+fetch data from kaggle 
+used python libraries to clean and make data useful
+100 employee data is ready 
+
+store the data in a array list of type class the class contains all the colm header of the data. 
+
+use stream to filter the data by age limit of 30 above and store it in a separate csv file and store it 
+
+return the count of the no of employees age greater than 30 
