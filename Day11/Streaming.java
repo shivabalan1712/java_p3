@@ -3,13 +3,13 @@ import java.io.*;
 import java.util.stream.*;
 
 public class Streaming {
-  public static void writecsv(String file, String[] header, List<String[]> age30) {
+  public static void writecsv(String file, String[] header, List<String[]> rows) {
     try(BufferedWriter wr = new BufferedWriter(new FileWriter(file))) {
     
     wr.write(String.join(",",header));
     wr.newLine();
     
-    age30.stream()
+    rows.stream()
         .map(row -> String.join(",",row))
         .forEach(line -> {
           try {wr.write(line);wr.newLine();}
@@ -45,10 +45,24 @@ public class Streaming {
                                 } catch (NumberFormatException e) {return false;}
                                })
                                .collect(Collectors.toList());
-                               
+    
+    List<String> distinct = body.stream()
+                                  .map(row -> row[2].trim())
+                                  .filter(city -> !city.isEmpty())
+                                  .distinct()
+                                  .collect(Collectors.toList());
+                                  
+    System.out.println("Distinct Cities are:");
+    distinct.forEach(System.out::println);
+    
+    List<String[]> citylist = body.stream()
+                                  .sorted(Comparator.comparing(row -> row[2].trim()))
+                                  .collect(Collectors.toList());
+    
     System.out.println("No of Employees above 30 :"+age30.size());
     writecsv("Output.csv",header,age30);
     writecsv("Employee_100.csv",header,data);
+    writecsv("Employee_city.csv",header,citylist);
     }
   
 }
