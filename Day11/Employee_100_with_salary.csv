@@ -1,0 +1,100 @@
+Education,JoiningYear,City,PaymentTier,Age,Gender,Salary
+Bachelors,2017,Bangalore,3,34,Male,70000
+Bachelors,2013,Pune,1,28,Female,100000
+Bachelors,2014,New Delhi,3,38,Female,60000
+Masters,2016,Bangalore,3,27,Male,60000
+Masters,2017,Pune,3,24,Male,150000
+Bachelors,2016,Bangalore,3,22,Male,190000
+Bachelors,2015,New Delhi,3,38,Male,200000
+Bachelors,2016,Bangalore,3,34,Female,70000
+Bachelors,2016,Pune,3,23,Male,170000
+Masters,2017,New Delhi,2,37,Male,200000
+Masters,2012,Bangalore,3,27,Male,180000
+Bachelors,2016,Pune,3,34,Male,90000
+Bachelors,2018,Pune,3,32,Male,180000
+Bachelors,2016,Bangalore,3,39,Male,150000
+Bachelors,2012,Bangalore,3,37,Male,100000
+Bachelors,2017,Bangalore,1,29,Male,110000
+Bachelors,2014,Bangalore,3,34,Female,50000
+Bachelors,2014,Pune,3,34,Male,70000
+Bachelors,2015,Pune,2,30,Female,50000
+Bachelors,2016,New Delhi,2,22,Female,130000
+Bachelors,2012,Bangalore,3,37,Male,180000
+Masters,2017,New Delhi,2,28,Male,150000
+Bachelors,2017,New Delhi,2,36,Male,180000
+Bachelors,2015,Bangalore,3,27,Male,180000
+Bachelors,2017,Bangalore,3,29,Male,200000
+Bachelors,2013,Bangalore,3,22,Female,80000
+Bachelors,2016,Bangalore,3,37,Male,130000
+Bachelors,2015,Bangalore,3,23,Male,200000
+Bachelors,2013,Pune,2,31,Female,50000
+Masters,2017,New Delhi,2,30,Female,50000
+PHD,2013,New Delhi,3,25,Male,170000
+Bachelors,2014,Bangalore,3,23,Male,120000
+Bachelors,2018,Bangalore,3,26,Male,130000
+Bachelors,2016,Bangalore,3,40,Male,120000
+Bachelors,2017,Pune,2,37,Female,170000
+Bachelors,2014,Bangalore,1,30,Female,60000
+Bachelors,2012,New Delhi,3,29,Male,160000
+Bachelors,2018,New Delhi,2,34,Female,180000
+Bachelors,2017,Pune,2,29,Female,80000
+Bachelors,2014,Pune,3,30,Male,70000
+Bachelors,2015,Bangalore,3,36,Male,60000
+Masters,2017,New Delhi,2,23,Male,190000
+Bachelors,2013,Bangalore,3,30,Male,80000
+Bachelors,2014,Bangalore,3,36,Male,100000
+Bachelors,2015,Pune,3,39,Male,50000
+Bachelors,2014,Bangalore,3,23,Female,50000
+PHD,2012,New Delhi,3,27,Male,130000
+Masters,2013,New Delhi,3,35,Male,110000
+Masters,2017,New Delhi,2,34,Male,60000
+Bachelors,2013,Bangalore,3,30,Female,170000
+PHD,2017,New Delhi,3,34,Male,190000
+Bachelors,2015,Pune,2,26,Female,140000
+Bachelors,2016,Bangalore,3,34,Female,200000
+Bachelors,2014,Bangalore,3,31,Female,120000
+Bachelors,2017,New Delhi,3,31,Female,130000
+PHD,2013,New Delhi,3,28,Male,140000
+Bachelors,2016,Bangalore,3,38,Male,160000
+Masters,2014,Pune,3,39,Female,120000
+Bachelors,2013,Pune,3,32,Male,140000
+Masters,2017,Pune,2,36,Male,130000
+Masters,2013,New Delhi,3,29,Male,80000
+Bachelors,2015,Bangalore,3,30,Male,80000
+PHD,2013,Bangalore,2,25,Male,90000
+Bachelors,2014,Pune,1,22,Female,130000
+Bachelors,2016,Bangalore,3,34,Male,190000
+Bachelors,2018,Bangalore,3,40,Male,60000
+PHD,2013,Bangalore,3,26,Male,110000
+Bachelors,2014,New Delhi,3,28,Male,180000
+Bachelors,2015,Bangalore,3,24,Female,130000
+Masters,2017,Bangalore,3,40,Female,50000
+Bachelors,2018,Bangalore,3,23,Female,80000
+Masters,2017,Bangalore,3,31,Male,120000
+Bachelors,2014,Pune,3,25,Female,110000
+Bachelors,2014,Bangalore,1,27,Male,140000
+Masters,2017,New Delhi,2,25,Female,120000
+Bachelors,2015,Bangalore,3,40,Male,160000
+Bachelors,2014,Bangalore,1,23,Female,140000
+Bachelors,2017,Bangalore,3,23,Female,50000
+Bachelors,2012,Bangalore,3,39,Male,180000
+PHD,2015,New Delhi,1,37,Male,180000
+Bachelors,2017,Pune,3,38,Male,70000
+Bachelors,2013,Bangalore,3,31,Female,120000
+Bachelors,2016,Bangalore,3,38,Male,160000
+Bachelors,2017,Bangalore,3,25,Female,170000
+Bachelors,2015,Bangalore,3,27,Female,130000
+Bachelors,2016,Pune,2,36,Male,150000
+Bachelors,2017,Pune,2,27,Female,50000
+Masters,2015,Pune,2,32,Female,170000
+Bachelors,2014,Bangalore,3,28,Male,130000
+Masters,2012,New Delhi,3,32,Male,200000
+Bachelors,2018,Bangalore,3,30,Male,60000
+Bachelors,2015,New Delhi,3,22,Male,180000
+Bachelors,2017,New Delhi,2,34,Female,90000
+Masters,2013,New Delhi,3,36,Male,130000
+Bachelors,2014,Bangalore,3,39,Male,110000
+PHD,2018,Bangalore,3,26,Male,90000
+Bachelors,2016,Bangalore,3,31,Female,110000
+Bachelors,2014,Bangalore,3,27,Male,170000
+Bachelors,2014,Bangalore,3,29,Female,50000
