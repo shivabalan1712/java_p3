@@ -69,7 +69,7 @@ public class Streaming {
     //Average salary per city                                  
     System.out.println("Average Salary per city :");
     Map<String, Double> avgcity = body.stream()
-                                      .collect(Collectors.groupingBy(row -> row[2], Collectors.averagingDouble(row -> Double.parseDouble(row[7]))));
+                                      .collect(Collectors.groupingBy(row -> row[2], Collectors.averagingDouble(row -> Double.parseDouble(row[6]))));
                                       
     avgcity.forEach((city,avg) -> System.out.println(city+" : "+avg));
     //anymatch by phd in pune
@@ -93,10 +93,18 @@ public class Streaming {
     
     //max
     Optional<String[]> maxemp = body.stream()
-                                    .max(Comparator.comparingDouble(row -> Double.parseDouble(row[7])));
+                                    .max(Comparator.comparingDouble(row -> Double.parseDouble(row[6])));
                                     
     maxemp.ifPresent(emp -> System.out.println("Max salary of the employee :"+Arrays.toString(emp)));
+    //common elements- who all are resides in pune
+    List<String[]> puneemp = body.stream()
+                                 .filter(row->row.length>2 && row[2].equalsIgnoreCase("Pune"))
+                                 .collect(Collectors.toList());
+                            
+    System.out.println("Employees in pune :"+puneemp.size());
+    puneemp.forEach(row->System.out.println(Arrays.toString(row)));
     
+    writecsv("Pune_emp.csv",header,puneemp);
     writecsv("Output.csv",header,age30);
     writecsv("Employee_100.csv",header,data);
     writecsv("Employee_city.csv",header,citylist);
