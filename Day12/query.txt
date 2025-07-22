@@ -1,0 +1,205 @@
+1.create table salary:
+
+create table salary(payscale integer primary key,
+		    salary integer);
+2.create table department:
+
+create table department(dno varchar primary key,
+			dname varchar);
+			
+3.create table employee:
+
+create table employee(eno varchar primary key,
+		      ename varchar,
+		      dob date,
+		      gender varchar,
+		      permanent boolean,
+		      payscale integer references salary(payscale),
+		      dno varchar references department(dno),
+		      joindatetime timestamp);			
+			
+3.insert into employee,salary,department:
+
+insert into salary(payscale,salary) values
+(1,120000),
+(2,90000),
+(3,75000),
+(4,50000);
+
+insert into department(dno,dname) values
+('ds901','HR'),
+('ds902', 'Operations'),
+('ds903', 'Implementation'),
+('ds904', 'Development');
+
+insert into employee(eno, ename, dob, gender, permanent, payscale, dno, joindatetime) values    
+('p3s101', 'Shiva', '2002-12-17', 'M', true, 3, 'ds904', now()),
+('p3s102', 'Balan', '2001-12-23', 'M', true, 4, 'ds902', now()),
+('p3s103', 'Ram', '1998-08-05', 'M', true, 2, 'ds903', now()),
+('p3s104', 'Prasath', '1996-03-09', 'M', true, 1, 'ds901', now()),
+('p3s105', 'Thambi', '1995-01-12', 'M', false, 2, 'ds902', now()),
+('p3s106', 'Velu', '1993-05-22', 'M', true, 3, 'ds904', now()),
+('p3s107', 'Guna', '1999-07-11', 'M', true, 1, 'ds901', now()),
+('p3s108', 'Sekar', '1992-11-18', 'M', false, 4, 'ds903', now()),
+('p3s109', 'Rajan', '2000-10-30', 'M', true, 3, 'ds904', now()),
+('p3s110', 'Ravi', '1988-02-17', 'M', true, 1, 'ds901', now()),
+('p3s111', 'Mohan', '1994-04-25', 'M', false, 2, 'ds902', now()),
+('p3s112', 'Arun', '1997-06-03', 'M', true, 4, 'ds902', now());
+
+4.join employee and salary
+
+4.a.inner join 
+
+select e.eno, e.ename, s.salary 
+from employee e
+inner join salary s on e.payscale = s.payscale;
+
+4.b.left join
+
+select e.eno,e.ename,d.dname
+from employee e
+left join department d on e.dno = d.dno;
+
+4.c.right join
+
+select e.eno,e.ename,d.dname
+from employee e
+right join department d on e.dno = d.dno;
+
+4.d.full outer join
+
+select e.eno,e.ename,d.dname
+from employee e
+full outer join department d on e.dno = d.dno;
+
+4.e.inner join
+
+select e.eno,e.ename,d.dname,s.salary
+from employee e
+join salary s on e.payscale = s.payscale
+join department d on e.dno = d.dno;
+
+5.using where
+
+select eno,ename from employee where permanent=true;
+
+6.employee with salary <75000
+
+select e.eno,e.ename,s.salary
+from employee e
+join salary s on e.payscale = s.payscale
+where s.salary < 75000;
+
+7.top 5 employee with highest salary
+
+select e.eno,e.ename,s.salary
+from employee e
+join salary s on e.payscale = s.payscale
+order by s.salary desc
+limit 5;
+
+8.top 2 nd employee with highest salary
+
+select e.eno,e.ename,s.salary
+from employee e
+join salary s on e.payscale = s.payscale
+order by s.salary desc
+offset 1 limit 1;
+
+9.alter table adding city coln
+
+alter table employee
+add column city varchar;
+
+9.a.updating details
+
+update employee set city ='Chennai' where eno = 'p3s101';
+update employee set city ='Banglore' where eno = 'p3s102';
+update employee set city ='Madurai' where eno = 'p3s103';
+update employee set city ='Trichy' where eno = 'p3s104';
+update employee set city ='Madurai' where eno = 'p3s105';
+update employee set city ='Chennai' where eno = 'p3s106';
+update employee set city ='Tuty' where eno = 'p3s107';
+update employee set city ='Tuty' where eno = 'p3s108';
+update employee set city ='Banglore' where eno = 'p3s109';
+update employee set city ='Chennai' where eno = 'p3s110';
+update employee set city ='Madurai' where eno = 'p3s111';
+update employee set city ='Chennai' where eno = 'p3s112';
+
+10.count of distinct employee living in each city
+
+select e.city, count(*) as empcount
+from employee e
+group by e.city;
+
+11. min sal, max sal
+
+select min(s.salary) as minsal, max(s.salary) as maxsal
+from employee e
+join salary s on e.payscale = s.payscale;
+
+12.create a view to view all the details
+
+create view empdetails as
+select e.eno, e.ename, e.dob, e.gender, e.permanent, d.dname as department, s.salary, e.joindatetime 
+from employee e
+join salary s on e.payscale = s.payscale
+join department d on e.dno = d.dno;
+
+13.city wise avg salary
+
+select e.city, avg(s.salary) as avgsal 
+from employee e
+join salary s on e.payscale = s.payscale
+group by e.city;
+
+
+14. create studentdb
+
+create table student(
+		rollno integer primary key,
+		name varchar,
+		math integer,
+		sci integer,
+		soc integer,
+		eng integer,
+		lang integer,
+		total integer);
+
+15.function to make total
+
+create function make_total()
+returns trigger as $$
+begin
+	new.total := new.math + new.sci + new.soc + new.eng + new.lang;
+	return new;
+end;
+$$ language plpgsql;
+
+create trigger insert
+before insert on student
+for each row
+execute function make_total();
+
+insert into student (rollno,name,math,sci,soc,eng,lang) values
+(20259001,'Shiva',100,98,97,90,100),
+(20259002, 'Balan', 89,  95,  88, 91, 87),
+(20259003, 'Ram', 100, 100, 100, 90, 95),
+(20259004, 'Prasath', 70,  75,  80, 85, 90),
+(20259005, 'Thambi', 90,  92,  93, 94, 95),
+(20259006, 'Guna',100, 100, 60, 70, 65),
+(20259007, 'Velu',80,  88,  84, 90, 91),
+(20259008, 'Sekar',55,  60,  65, 70, 75),
+(20259009, 'Rajan',90,  100, 100, 80, 85),
+(20259010, 'Anbu',100, 95,  100, 88, 89);
+
+
+16.select students who have scored 100 in 2 subjects
+
+select rollno,name
+from student 
+where ( case when math = 100 then 1 else 0 end +
+	case when sci = 100 then 1 else 0 end +
+	case when soc = 100 then 1 else 0 end +
+	case when eng = 100 then 1 else 0 end +
+	case when lang = 100 then 1 else 0 end ) >= 2;
