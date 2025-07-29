@@ -76,6 +76,13 @@ public class EmployeeMgtSystem {
 
     //empgrp.forEach((gender, names) -> System.out.println(gender + " : " + names));
     System.out.println(empgrp);
+    
+    Map<String, List<String>> empgrp = emp.stream()
+                                          .collect(Collectors.groupingBy(
+                                              Employee::getGender,
+                                              Collectors.mapping(Employee::getName, Collectors.toList())))
+                                              //.forEach(System.out::println)
+                                              ;
   }	
 }
 

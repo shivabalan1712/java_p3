@@ -23,7 +23,6 @@ class Employee {
     public double getSalary() { return salary; }
     public List<Project> getProjects() { return projects; }
     public String getGender() { return gender; }
-
 }
 
 

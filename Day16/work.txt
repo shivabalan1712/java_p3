@@ -1,0 +1,11 @@
+Collectors.joining(delimeter,prefix,suffix)
+Collectors.mapping(mapper,downstream) 
+Collectors.gropingBy(classifier,hashmap,downstream)
+Collectors.gropingBy(classifier,toList())
+maptoDouble(),maptoInt(),maptoLong()
+sum(),averagingDouble(),max(),min()
+DoubleSummaryStatistics -> summaryStatictics()
+var.replaceAll(regrex,replacement)
+
+
+//downstream - collect the grouped values

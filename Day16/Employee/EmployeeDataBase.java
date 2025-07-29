@@ -34,3 +34,13 @@ public class EmployeeDataBase {
   
     }
 }
+
+//@Getter	- Generates getter for all fields
+//@Setter	- Generates setter for all fields
+//@Data	- Combines @Getter, @Setter, @ToString, @EqualsAndHashCode, @RequiredArgsConstructor
+//@NoArgsConstructor -	Generates no-argument constructor
+//@AllArgsConstructor -	Generates constructor with all fields
+//@Builder -	Implements builder pattern
+//@ToString -	Generates toString()
+//@EqualsAndHashCode -	Generates equals() and hashCode()
+//@Slf4j -	Creates a logger field (log)
