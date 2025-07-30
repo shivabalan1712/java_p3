@@ -116,5 +116,27 @@ public class ArrayListimp {
 		//duplicate using map
 		duplicateusingmap(arr);
 		
+		//stringjoiner
+		StringJoiner joiner = new StringJoiner(", ");
+		joiner.add("Java").add("Python").add("C++");
+		System.out.println(joiner);
+		
+		//UUID
+		String id = UUID.randomUUID().toString();
+		System.out.println(id);
+		
+		Random rand = new Random();
+		int randomnum = rand.nextInt(100);
+		System.out.println(randomnum);
+		
+		
+		
+		
 	}
 }
+
+//functions- 
+  //predicate<T> - test a condition (simply for checking a normal if condition like),
+  //Function<T,R> - perform a function with variables and return result,
+  //Consumer<T> - consume a object inside the lambda,
+  //Supplier<T> - similar to consumer but it produce the obj but dont consume it
