@@ -1,5 +1,6 @@
 import java.util.*;
 import java.time.*;
+import java.text.*;
 //public String toString()
 import java.time.format.DateTimeFormatter;
 
@@ -37,6 +38,10 @@ public class Main {
 
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     String formattedNow = now.format(formatter);
+    
+    Date date = new Date();
+    SimpleDateFormat formatTime = new SimpleDateFormat("hh.mmaa");
+    String time = formatTime.format(date);
     
     System.out.println(formattedNow);
 
